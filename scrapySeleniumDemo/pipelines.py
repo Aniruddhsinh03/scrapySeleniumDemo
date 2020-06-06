@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+
 
 # Define your item pipelines here
 #
@@ -8,4 +10,10 @@
 
 class ScrapyseleniumdemoPipeline:
     def process_item(self, item, spider):
-        return item
+        os.chdir('E:\IMAGE STORE')
+        # rename image with title
+        if item['images'][0]['path']:
+            new_image_name = item['title'][0] + '.jpg'
+            new_image_path = 'full/' + new_image_name
+
+            os.rename(item['images'][0]['path'], new_image_path)
