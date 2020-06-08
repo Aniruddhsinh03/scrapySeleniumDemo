@@ -53,6 +53,7 @@ The extracted data looks like this sample:
 
 in settings.py set pipeline for download image and store location.
 command:
+        
         TEM_PIPELINES = {
         'scrapy.pipelines.images.ImagesPipeline': 1,
         'scrapySeleniumDemo.pipelines.ScrapyseleniumdemoPipeline': 2
@@ -61,6 +62,7 @@ command:
         
         
  pipeline for rename images with title
+            
             def process_item(self, item, spider):
             os.chdir('E:\IMAGE STORE')
             if item['images'][0]['path']:
