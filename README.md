@@ -4,6 +4,54 @@ This is a Scrapy project to scrape online book store from http://books.toscrape.
 
 This project is only meant for educational purposes.
 
+## Element Selection
+
+Bookstore Website
+
+
+![Image of Website](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_1.jpg)
+
+Book Url Selection
+
+
+![Image of BookUrl](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_2.jpg)
+
+Next Page Url Selection
+
+
+![Image of NextPage](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_3.jpg)
+
+
+Image Url Selection
+
+
+![Image of ImageUrl](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_4.jpg)
+
+Title Selection
+
+
+![Image of Title](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_5.jpg)
+
+
+Price Selection
+
+
+![Image of Price](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_6.jpg)
+
+Stock And Ratings Selection
+
+
+![Image of StockAndRatings](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_7.jpg)
+
+Description Selection
+
+
+![Image of Description](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_8.jpg)
+
+Product Type,Price Inc Tax,Price Exc Tax,Tax,Availability,Reviews Selection
+
+
+![Image of ProdtData](https://github.com/Aniruddhsinh03/scrapySeleniumDemo/blob/master/screenshots/bookstore_9.jpg)
 
 ## Extracted data
 
