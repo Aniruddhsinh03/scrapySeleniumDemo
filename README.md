@@ -7,7 +7,7 @@ This project is only meant for educational purposes.
 
 ## Extracted data
 
-This project extracts quotes, combined with the respective author names and tags.
+This project extracts availability,description,image_urls,images(download with rename),url,instock_availability,number_of_reviews,price,price__excl_tax,price_incl_tax,product_type,rating,tax,title,upc.
 The extracted data looks like this sample:
 
      {'availability': ['In stock (1 available)'],
@@ -49,6 +49,24 @@ The extracted data looks like this sample:
                  'title': ['Lost Among the Living'],
                  'upc': ['d510567580c8be52']}
 
+## Configuration
+
+in settings.py set pipeline for download image and store location.
+command:
+        TEM_PIPELINES = {
+        'scrapy.pipelines.images.ImagesPipeline': 1,
+        'scrapySeleniumDemo.pipelines.ScrapyseleniumdemoPipeline': 2
+                         }
+        IMAGES_STORE = 'E:\IMAGE STORE'
+        
+        
+ pipeline for rename images with title
+            def process_item(self, item, spider):
+            os.chdir('E:\IMAGE STORE')
+            if item['images'][0]['path']:
+            new_image_name = item['title'][0] + '.jpg'
+            new_image_path = 'full/' + new_image_name
+              os.rename(item['images'][0]['path'], new_image_path)
 
 ## Spiders
 
@@ -58,7 +76,7 @@ command:
     $ scrapy list
     scrapySeleniumDataExtractionAndActionDemo
 
-Spider extract the data from quotes page and visit author hyperlink and extract auther infomation also.
+Spider extract the data from book store.
 
 
 
